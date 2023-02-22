@@ -1,0 +1,196 @@
+/* Estilos gerais */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos para o cabeçalho */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Estilos para a seção principal */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 2%;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+li a {
+  display: block;
+  min-width: 150px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+li a:hover {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Estilos para o rodapé */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  @media (max-width: 767px) {
+    footer {
+      font-size: 0.6em;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    footer {
+      font-size: 0.7em;
+    }
+  }
+  
+
+/* Media Queries para dispositivos móveis */
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 20px;
+  }
+  
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  li a {
+    min-width: 120px;
+  }
+}
+
+
+/* Profile */
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 2%;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile .info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile .info p {
+  margin: 0;
+  font-size: 18px;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* estilo para quando o campo de entrada está ativo */
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
+  }
+
+  h3 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
